@@ -63,7 +63,7 @@
     - libxslt1-dev
     - libxml2-dev
     - libjpeg-dev
-
+    - gettext
 
 - name: Install memcached
   include: memcached.yml
