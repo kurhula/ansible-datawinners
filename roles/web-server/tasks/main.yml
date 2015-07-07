@@ -37,7 +37,7 @@
 
 - name: Install pip into virtual environment
   sudo_user: "{{user}}"
-  pip: name=pip virtualenv=/home/{{user}}/virtual_env/datawinners state=latest
+  pip: name=pip virtualenv=/home/{{user}}/virtual_env/datawinners version=1.4.1
 
 - name: Create DataWinners log folder
   file: path="/var/log/datawinners" state=directory owner={{user}} group={{user}}
